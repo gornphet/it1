@@ -69,6 +69,25 @@
         // --- ข้อมูลข่าวสาร (Mock Data) ---
         const INITIAL_DATA = [
             {
+                id: 9,
+                title: "ขอเชิญเที่ยวงานนมัสการพระแท่นศิลาอาสน์ ประจำปี 2569",
+                date: "22 มกราคม 2569",
+                category: "งานประเพณี/รัฐพิธี",
+                location: "วัดพระแท่นศิลาอาสน์ พระอารามหลวง",
+                president: "-",
+                description: "ขอเชิญเที่ยวงานนมัสการพระแท่นศิลาอาสน์ ประจำปี 2569 ระหว่างวันที่ 22 ม.ค. - 2 ก.พ. 2569",
+                content: "ขอเชิญเที่ยวงานนมัสการพระแท่นศิลาอาสน์ ประจำปี 2569 ในระหว่างวันที่ 22 มกราคม 2569 - 2 กุมภาพันธ์ 2569 ณ วัดพระแท่นศิลาอาสน์ พระอารามหลวง ตำบลทุ่งยั้ง อำเภอลับแล จังหวัดอุตรดิตถ์",
+                images: [
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1769062272/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%97%E0%B9%88%E0%B8%9969/1_k6srzm.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1769062272/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%97%E0%B9%88%E0%B8%9969/2_vs0mw4.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1769062272/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%97%E0%B9%88%E0%B8%9969/3_b3s5jg.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1769062272/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%97%E0%B9%88%E0%B8%9969/4_so5x46.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1769062272/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%97%E0%B9%88%E0%B8%9969/5_n9ybti.jpg"
+                ],
+                author: "แอดมินระบบ",
+                timestamp: "22/01/2569 09:00:00"
+            },
+            {
                 id: 8,
                 title: "กิจกรรมสวดมนต์ข้ามปี 2568",
                 date: "31 ธันวาคม 2568",
