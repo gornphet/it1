@@ -69,6 +69,34 @@
         // --- ข้อมูลข่าวสาร (Mock Data) ---
         const INITIAL_DATA = [
             {
+                id: 11,
+                title: "ร่วมเดินขบวนแห่ศิลปวัฒนธรรม ในงานประเพณีอัฐมีบูชา จังหวัดอุตรดิตถ์ ประจำปี 2569",
+                date: "8 มิถุนายน 2569",
+                category: "งานประเพณี/รัฐพิธี",
+                location: "วัดพระบรมธาตุทุ่งยั้ง",
+                president: "-",
+                description: "เทศบาลตำบลหัวดงร่วมเดินขบวนแห่ศิลปวัฒนธรรม ในงานประเพณีอัฐมีบูชา จังหวัดอุตรดิตถ์ ประจำปี 2569",
+                content: "ในวันจันทร์ที่ 8 มิถุนายน 2569 เวลา 15.00 น. เทศบาลตำบลหัวดง นำโดยนายเพลิน ศิริเกตุ นายกเทศมนตรีตำบลหัวดง และนางพวงพรรณ ขันปิงปุ๊ด ปลัดเทศบาลตำบลหัวดง พร้อมด้วยพนักงานเทศบาล ผู้นำชุมชน และมวลชนชาวตำบลแม่พูล ได้ร่วมกันจัดขบวนแห่ศิลปวัฒนธรรมท้องถิ่นของเทศบาลตำบลหัวดง เข้าร่วมเดินขบวนแห่ศิลปวัฒนธรรม ในงานประเพณีอัฐมีบูชา จังหวัดอุตรดิตถ์ ประจำปี 2569 โดยเริ่มขบวน ณ วัดพระยืนพุทธบาทยุคลและเดินขบวนไปยังวัดพระบรมธาตุทุ่งยั้ง หรือ วัดพระบรมธาตุเพื่อถวายเครื่องสักการะแด่พระมหาธาตุ",
+                images: [
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1781164920/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%AD%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%B5%E0%B8%9A%E0%B8%B9%E0%B8%8A%E0%B8%B2/1_bpdgcs.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1781164920/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%AD%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%B5%E0%B8%9A%E0%B8%B9%E0%B8%8A%E0%B8%B2/2_xukmrz.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1781164921/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%AD%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%B5%E0%B8%9A%E0%B8%B9%E0%B8%8A%E0%B8%B2/3_lm6kza.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1781164921/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%AD%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%B5%E0%B8%9A%E0%B8%B9%E0%B8%8A%E0%B8%B2/4_rn2m7v.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1781164922/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%AD%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%B5%E0%B8%9A%E0%B8%B9%E0%B8%8A%E0%B8%B2/5_dirxre.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1781164922/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%AD%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%B5%E0%B8%9A%E0%B8%B9%E0%B8%8A%E0%B8%B2/6_gyrvho.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1781164922/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%AD%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%B5%E0%B8%9A%E0%B8%B9%E0%B8%8A%E0%B8%B2/7_aiy47v.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1781164924/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%AD%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%B5%E0%B8%9A%E0%B8%B9%E0%B8%8A%E0%B8%B2/8_umwhw6.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1781164920/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%AD%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%B5%E0%B8%9A%E0%B8%B9%E0%B8%8A%E0%B8%B2/9_ohrtiu.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1781164921/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%AD%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%B5%E0%B8%9A%E0%B8%B9%E0%B8%8A%E0%B8%B2/10_f5dcz2.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1781164924/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%AD%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%B5%E0%B8%9A%E0%B8%B9%E0%B8%8A%E0%B8%B2/11_qbwjdk.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1781164924/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%AD%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%B5%E0%B8%9A%E0%B8%B9%E0%B8%8A%E0%B8%B2/12_e0gdxy.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1781164924/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%AD%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%B5%E0%B8%9A%E0%B8%B9%E0%B8%8A%E0%B8%B2/13_gqvu40.jpg",
+                    "https://res.cloudinary.com/dygneumft/image/upload/v1781164924/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%93%E0%B8%B5/%E0%B8%AD%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%B5%E0%B8%9A%E0%B8%B9%E0%B8%8A%E0%B8%B2/14_zy4g7e.jpg"
+                ],
+                author: "แอดมินระบบ",
+                timestamp: "11/06/2569 15:16:29"
+            },
+            {
                 id: 10,
                 title: "ร่วมเดินขบวนแห่เครื่องนมัสการพระแท่นศิลาอาสน์ และขบวนแห่ศิลปวัฒนธรรม",
                 date: "22 มกราคม 2569",
@@ -439,9 +467,9 @@
                                 <>
                                     <button onClick={(e) => { e.stopPropagation(); setCurrentSlide(prev => (prev === 0 ? selectedNews.images.length - 1 : prev - 1)); }} className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-slate-800 p-2 rounded-full shadow-lg backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all"><ChevronLeft size={24} /></button>
                                     <button onClick={(e) => { e.stopPropagation(); setCurrentSlide(prev => (prev === selectedNews.images.length - 1 ? 0 : prev + 1)); }} className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-slate-800 p-2 rounded-full shadow-lg backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all"><ChevronRight size={24} /></button>
-                                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 p-2 bg-black/20 rounded-full backdrop-blur-[2px]">
+                                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 p-2 bg-black/20 rounded-full backdrop-blur-[2px] flex-wrap justify-center w-[90%]">
                                     {selectedNews.images.map((_, idx) => (
-                                        <button key={idx} onClick={(e) => { e.stopPropagation(); setCurrentSlide(idx); }} className={`w-2 h-2 rounded-full transition-all ${currentSlide === idx ? 'bg-white scale-125' : 'bg-white/40'}`} />
+                                        <button key={idx} onClick={(e) => { e.stopPropagation(); setCurrentSlide(idx); }} className={`w-2 h-2 rounded-full transition-all m-0.5 ${currentSlide === idx ? 'bg-white scale-125' : 'bg-white/40'}`} />
                                     ))}
                                     </div>
                                 </>
